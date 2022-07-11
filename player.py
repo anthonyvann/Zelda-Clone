@@ -176,7 +176,7 @@ class Player(Entity):
 
         # flicker 
         if not self.vulnerable:
-            alpha = self.wave_value()
+            alpha = self.get_wave_value()
             self.image.set_alpha(alpha)
         else:
             self.image.set_alpha(255)

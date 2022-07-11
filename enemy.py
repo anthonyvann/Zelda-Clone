@@ -95,7 +95,7 @@ class Enemy(Entity):
 		self.rect = self.image.get_rect(center = self.hitbox.center)
 
 		if not self.vulnerable:
-			alpha = self.wave_value()
+			alpha = self.get_wave_value()
 			self.image.set_alpha(alpha)
 		else:
 			self.image.set_alpha(255)
